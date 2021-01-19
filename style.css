@@ -1,0 +1,432 @@
+                                                    * {
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        font-family: 'Domine', serif;
+                                                    }
+                                                    
+                                                    #banner {
+                                                        background: url(fog-3622519_1920-jpg.jpeg);
+                                                        background-size: cover;
+                                                        background-position: center;
+                                                        height: 100vh;
+                                                    }
+                                                    
+                                                    .logo {
+                                                        width: 50px;
+                                                        position: absolute;
+                                                        top: 4%;
+                                                        left: 10%;
+                                                    }
+                                                    
+                                                    .banner-text {
+                                                        text-align: center;
+                                                        color: black;
+                                                        padding-top: 100px;
+                                                    }
+                                                    
+                                                    .banner-text h1 {
+                                                        font-size: 80px;
+                                                    }
+                                                    
+                                                    .banner-text p {
+                                                        font-size: 50px;
+                                                        font-style: bold;
+                                                    }
+                                                    
+                                                    .banner-btn {
+                                                        margin: 70px auto 0;
+                                                    }
+                                                    
+                                                    .banner-btn a {
+                                                        width: 150px;
+                                                        text-decoration: none;
+                                                        font-style: bold;
+                                                        display: inline-block;
+                                                        margin: 0 10px;
+                                                        padding: 12px 0;
+                                                        color: white;
+                                                        border: 1px solid whitesmoke;
+                                                        position: relative;
+                                                        z-index: 1;
+                                                    }
+                                                    
+                                                    .banner-btn a span {
+                                                        width: 0;
+                                                        height: 100%;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        background: white;
+                                                        z-index: -1;
+                                                        transition: 0.5s;
+                                                    }
+                                                    
+                                                    .banner-btn a:hover span {
+                                                        width: 100%;
+                                                    }
+                                                    
+                                                    .banner-btn a:hover {
+                                                        color: black;
+                                                        ;
+                                                    }
+                                                    
+                                                    #sidenav {
+                                                        width: 250px;
+                                                        height: 100vh;
+                                                        position: fixed;
+                                                        right: -250px;
+                                                        top: 0;
+                                                        background: white;
+                                                        z-index: 2;
+                                                        transition: 0.5s;
+                                                    }
+                                                    
+                                                    nav ul li {
+                                                        list-style: none;
+                                                        margin: 50px 10px;
+                                                    }
+                                                    
+                                                    nav ul li a {
+                                                        text-decoration: none;
+                                                        color: black;
+                                                    }
+                                                    
+                                                    #menubtn {
+                                                        width: 5px;
+                                                        height: 5px;
+                                                        background: white;
+                                                        text-align: center;
+                                                        position: fixed;
+                                                        right: 50px;
+                                                        top: 20px;
+                                                        border-radius: 3px;
+                                                        z-index: 3;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    #mebubtn img {
+                                                        width: 3px;
+                                                        margin-top: 3px;
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 770px) {
+                                                        .banner-text h1 {
+                                                            font-size: 44px;
+                                                        }
+                                                        .banner-text p {
+                                                            font-size: 22px;
+                                                            font-style: bold;
+                                                        }
+                                                        .banner-btn a {
+                                                            display: block;
+                                                            margin: 20px auto;
+                                                        }
+                                                    }
+                                                    /*---Feature---*/
+                                                    
+                                                    #academics {
+                                                        width: 100%;
+                                                        padding: 70px 0;
+                                                    }
+                                                    
+                                                    .title {
+                                                        text-align: center;
+                                                        padding: 70px;
+                                                    }
+                                                    
+                                                    .title p {
+                                                        margin: auto;
+                                                        color: brown;
+                                                        font-weight: bolder;
+                                                        font-size: 30px;
+                                                        position: relative;
+                                                        z-index: 1;
+                                                        display: inline-block;
+                                                    }
+                                                    
+                                                    .title p::after {
+                                                        content: '';
+                                                        width: 50px;
+                                                        height: 35px;
+                                                        background: linear-gradient(brown, white);
+                                                        position: absolute;
+                                                        z-index: -1;
+                                                        top: -20px;
+                                                        left: 0;
+                                                        transform: rotate(10deg);
+                                                        border-top-left-radius: 35px;
+                                                        border-bottom-right-radius: 35px;
+                                                        ;
+                                                    }
+                                                    
+                                                    .title h1 {
+                                                        margin: auto;
+                                                        color: black;
+                                                        font-weight: bolder;
+                                                        font-size: 50px;
+                                                    }
+                                                    
+                                                    .academic-box {
+                                                        width: 80%;
+                                                        margin: auto;
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        align-items: center;
+                                                        text-align: center;
+                                                    }
+                                                    
+                                                    .school {
+                                                        flex-basis: 50%;
+                                                    }
+                                                    
+                                                    .school-img {
+                                                        flex-basis: 50%;
+                                                        margin: auto;
+                                                    }
+                                                    
+                                                    .school-img img {
+                                                        width: 70%;
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    .school h1 {
+                                                        text-align: left;
+                                                        margin-bottom: 10px;
+                                                        font-weight: 100;
+                                                        color: brown;
+                                                    }
+                                                    
+                                                    .school-desc {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        margin-bottom: 40px;
+                                                    }
+                                                    
+                                                    .school-icon .fa {
+                                                        width: 50px;
+                                                        height: 50px;
+                                                        font-size: 30px;
+                                                        line-height: 50px;
+                                                        border-radius: 8px;
+                                                        color: brown;
+                                                        border: 1px solid brown;
+                                                    }
+                                                    
+                                                    .school-text p {
+                                                        padding: 0 20px;
+                                                        text-align: initial;
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 770px) {
+                                                        .title h1 {
+                                                            margin: auto;
+                                                            color: black;
+                                                            font-weight: bolder;
+                                                            font-size: 35px;
+                                                        }
+                                                        .school {
+                                                            flex-basis: 100%;
+                                                        }
+                                                        .school-img {
+                                                            flex-basis: 100%;
+                                                            margin: auto;
+                                                        }
+                                                        .school-img img {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    /*---hobbies---*/
+                                                    
+                                                    #hobbies {
+                                                        width: 100%;
+                                                        padding: 70px 0;
+                                                        background: #efefef;
+                                                    }
+                                                    
+                                                    .hobbies-box {
+                                                        width: 80%;
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        justify-content: space-around;
+                                                        margin: auto;
+                                                    }
+                                                    
+                                                    .hobbies-list {
+                                                        flex-basis: 48%;
+                                                        text-align: center;
+                                                        border-radius: 7px;
+                                                        margin-bottom: 20px;
+                                                        color: white;
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    .hobbies-list img {
+                                                        width: 100%;
+                                                        border-radius: 7px;
+                                                    }
+                                                    
+                                                    .overlay {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        border-radius: 7px;
+                                                        cursor: pointer;
+                                                        background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+                                                        opacity: 0;
+                                                        transition: 1s;
+                                                    }
+                                                    
+                                                    .hobbies-list:hover .overlay {
+                                                        opacity: 1;
+                                                    }
+                                                    
+                                                    .hobbies-desc {
+                                                        width: 100%;
+                                                        position: absolute;
+                                                        bottom: 40%;
+                                                        opacity: 0;
+                                                        left: 50%;
+                                                        transition: 1s;
+                                                        transform: translateX(-50%);
+                                                        color: whitesmoke;
+                                                    }
+                                                    
+                                                    .hobbies-list:hover .hobbies-desc {
+                                                        bottom: 40%;
+                                                        opacity: 1;
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 770px) {
+                                                        .hobbies-list {
+                                                            flex-basis: 100%;
+                                                            margin-bottom: 30px;
+                                                        }
+                                                        .hobbies-list:hover .hobbies-desc {
+                                                            bottom: 25% !important;
+                                                        }
+                                                    }
+                                                    /*---about---*/
+                                                    
+                                                    #about {
+                                                        width: 100%;
+                                                        padding: 70px 0;
+                                                    }
+                                                    
+                                                    .about-row {
+                                                        width: 80%;
+                                                        margin: auto;
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        align-items: flex-start;
+                                                        justify-content: space-between;
+                                                    }
+                                                    
+                                                    .about-column {
+                                                        padding: 10px;
+                                                        margin-bottom: 30px;
+                                                        flex-basis: 28%;
+                                                        border-radius: 5px;
+                                                        box-shadow: 0 10px 20px 3px brown;
+                                                        cursor: pointer;
+                                                        transition: transform .5s;
+                                                    }
+                                                    
+                                                    .about-column p {
+                                                        font-size: 15px;
+                                                    }
+                                                    
+                                                    .user {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        margin: 20px 0;
+                                                    }
+                                                    
+                                                    .user img {
+                                                        width: 80px;
+                                                        margin-right: 20px;
+                                                        border-radius: 3px;
+                                                    }
+                                                    
+                                                    .about-desc .fa {
+                                                        margin-left: 10px;
+                                                        color: black;
+                                                        font-size: 20px;
+                                                    }
+                                                    
+                                                    .about-desc h4 {
+                                                        font-size: 20px;
+                                                        font-weight: 100%;
+                                                    }
+                                                    
+                                                    .about-column:hover {
+                                                        transform: translatey(7px);
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 770px) {
+                                                        .about-column {
+                                                            flex-basis: 100%;
+                                                        }
+                                                    }
+                                                    /*--footer--*/
+                                                    
+                                                    #footer {
+                                                        padding: 100px 0 20px;
+                                                        background: #efefef;
+                                                        position: relative;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    .footer-row {
+                                                        width: 80%;
+                                                        margin: 0 auto;
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        flex-wrap: wrap;
+                                                    }
+                                                    
+                                                    .footer-left,
+                                                    .footer-right {
+                                                        flex-basis: 45%;
+                                                        padding: 10px;
+                                                        margin-bottom: 20px;
+                                                    }
+                                                    
+                                                    .footer-right {
+                                                        text-align: right;
+                                                    }
+                                                    
+                                                    .footer-row h1 {
+                                                        margin: 10px 0;
+                                                    }
+                                                    
+                                                    .footer-row p {
+                                                        line-height: 40px;
+                                                    }
+                                                    
+                                                    .footer-left .fa,
+                                                    .footer-right .fa {
+                                                        font-size: 20px;
+                                                        color: brown;
+                                                        margin: 10px;
+                                                    }
+                                                    
+                                                    .footer-img {
+                                                        max-width: 370px;
+                                                        opacity: 0.1;
+                                                        position: absolute;
+                                                        top: 35%;
+                                                        left: 50%;
+                                                        transform: translate(-50%, -50%);
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 770px) {
+                                                        .footer-left,
+                                                        .footer-right {
+                                                            flex-basis: 100%;
+                                                            font-size: 15px;
+                                                        }
+                                                        .footer-img {
+                                                            top: 25%;
+                                                        }
+                                                    }
